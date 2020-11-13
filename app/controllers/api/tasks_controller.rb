@@ -23,7 +23,7 @@ class Api::TasksController < ApplicationController
 
   private 
   def task_params
-    params.fetch(:task, {}).permit(
+    params.fitch(:task, {}).permit(
       :name, :is_done
     )
   end
