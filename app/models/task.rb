@@ -1,3 +1,3 @@
 class Task < ApplicationRecord
-  validtes :name, presence: true
+  validates :name, presence: true
 end
